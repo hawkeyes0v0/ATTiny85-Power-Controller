@@ -14,7 +14,7 @@ const uint8_t statusLED = 2;                      //pin to Status LED
 // const uint8_t auxPin1 = 1;                     //AUX pin
 const uint8_t capADC = A2;                        //ADC pin testing cap bank voltage
 float calV = 0.9999;                              //calibration decimal value for 1.1Vref chip specific (lower value = higher voltage detected)
-float dividerMultiplier = 3;                      //multiplier for resistor voltage divider
+float dividerMultiplier = 1;                      //multiplier for resistor voltage divider
 int powerOn = 0;                                  //variable determined when power is on
 int voltageTarget = 2000;                         //the target voltage to charge cap bank
 int voltageMinimum = 1000;                        //the target voltage to charge cap bank
