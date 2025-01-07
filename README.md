@@ -22,7 +22,7 @@ Firmware can be built in Platformio using the platformio.ini and main.cpp files.
 The board will shutdown at voltageMinimum and not send power to the switched line until the voltage climbs above voltageTarget.
 When not outputting power on the switched line, the LED will blink every 8 sedonds when it wakes to check volage. Power consumption is about 0.5mA max in this state (normally lower than 0.1mA, I couldn't get reliable readings this low).
 
-There are few customizable options at the top of the .cpp file that you can configure to your needs. The main one 2 are voltageTarget and voltageMinimum
+There are few customizable options at the top of the .cpp file that you can configure to your needs. The main 2 are voltageTarget and voltageMinimum for configuring resume and cutoff respectively.
 
 - float calV = 1.0000;                              //calibration decimal value for 1.1Vref chip specific (lower value = higher voltage detected)
 - int ADCSettleDelay = 1;                           //Time in ms to wait before performing conversion to allow VRef to settle (minimum is around 50ns, 1ms should be more than enough)
