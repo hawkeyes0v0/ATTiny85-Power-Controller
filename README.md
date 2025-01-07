@@ -12,6 +12,10 @@ Eg,
 [**0.9-5V Boost**](https://vi.aliexpress.com/item/1005003932299815.html)
 ![DCDC Boost](PCB/Boost.PNG)
 
+This board also is compatible with Digispark ATTiny85 boards, but you may have to set the fuses to run at 1MHz so the code runs correctly.
+[DigiSpark ATTiny85](https://vi.aliexpress.com/item/2040316211.html)
+![DigiSpark](PCB/Digispark.PNG)
+
 ## Firmware
 
 You will need to use a Programmer like USBASP to flash the ATTiny85 chip.
