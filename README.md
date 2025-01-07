@@ -24,12 +24,12 @@ When not outputting power on the switched line, the LED will blink every 8 sedon
 
 There are few customizable options at the top of the .cpp file that you can configure to your needs. The main one 2 are voltageTarget and voltageMinimum
 
--float calV = 1.0000;                              //calibration decimal value for 1.1Vref chip specific (lower value = higher voltage detected)
--int ADCSettleDelay = 1;                           //Time in ms to wait before performing conversion to allow VRef to settle (minimum is around 50ns, 1ms should be more than enough)
--int blinkDelay = 20;                              //blink duration in addition to about 4ms of ADC polling
--float dividerMultiplier = 1;                      //multiplier for resistor voltage divider
--int voltageTarget = 2500;                         //the target voltage to charge cap bank
--int voltageMinimum = 1000;                        //the target voltage to charge cap bank
+- float calV = 1.0000;                              //calibration decimal value for 1.1Vref chip specific (lower value = higher voltage detected)
+- int ADCSettleDelay = 1;                           //Time in ms to wait before performing conversion to allow VRef to settle (minimum is around 50ns, 1ms should be more than enough)
+- int blinkDelay = 20;                              //blink duration in addition to about 4ms of ADC polling
+- float dividerMultiplier = 1;                      //multiplier for resistor voltage divider
+- int voltageTarget = 2500;                         //the target voltage to charge cap bank
+- int voltageMinimum = 1000;                        //the target voltage to charge cap bank
 
 ![Top](PCB/PCB_top.PNG)
 ![Bottom](PCB/PCB_bottom.PNG)
