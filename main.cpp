@@ -89,12 +89,14 @@ void loop() {
     if (voltCapBank >= voltageTarget){   
       powerOn = 1;
       targetReached = 1;
+      DDRB |= (1 << powerMosfet);  			//replaces pinMode(PB4, OUTPUT); but with open drain
       PORTB &= ~(1 << powerMosfet);		               //replaces digitalWrite(PB3, LOW); but with open drain enabled
     }else{
       powerOn = 0;
     }
     if(targetReached == 1 && voltCapBank >= voltageMinimum){
       powerOn = 1;
+      DDRB |= (1 << powerMosfet);  			//replaces pinMode(PB4, OUTPUT); but with open drain
       PORTB &= ~(1 << powerMosfet);		               //replaces digitalWrite(PB3, LOW); but with open drain enabled
     }else{
       powerOn = 0;
