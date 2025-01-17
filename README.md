@@ -25,7 +25,7 @@ Firmware can be built in Platformio using the platformio.ini and main.cpp files.
 ## Function
 
 The board will shutdown at voltageMinimum and not send power to the switched line until the voltage climbs above voltageTarget.
-When not outputting power on the switched line, the LED will blink every 8 sedonds when it wakes to check volage. Power consumption is about 0.5mA max in this state (normally lower than 0.1mA, I couldn't get reliable readings this low).
+When not outputting power on the switched line, the LED will blink every 8 sedonds when it wakes to check volage. Power consumption is about 0.5mA max in this state (normally lower than 0.1mA, I couldn't get reliable readings this low). 2mA when output is enabled and LED is continuously lit.
 
 There are few customizable options at the top of the .cpp file that you can configure to your needs. The main 2 are voltageTarget and voltageMinimum for configuring resume and cutoff respectively.
 
